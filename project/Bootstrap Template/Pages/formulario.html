@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyecto Bootstrap</title>
+
+    <link rel="stylesheet" href="/Css/reducido.css" />
+
+    <script
+      src="https://kit.fontawesome.com/51febe3278.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container d-grid gap-3">
+      <div
+        class="h6 d-flex justify-content-center align-middle pb-1 border border-dark text-black bg-primary"
+      >
+        Datos Personales
+      </div>
+      <div class="row d-flex">
+        <div
+          class="d-flex col-sm-6 col-lg-6 justify-content-center align-middle"
+        >
+          <form>
+            <label for="nombre" class="w-100">Primer Nombre</label>
+            <input type="text" name="nombre" id="nombre" class="w-100" />
+
+            <label for="apellido" class="w-100">Primer Apellido</label>
+            <input type="text" name="apellido" id="apellido" class="w-100" />
+
+            <div class="row">
+              <div class="col-lg-6 justify-content-center align-middle">
+                <label for="documento" class="w-100">Documento</label>
+                <input
+                  type="text"
+                  name="documento"
+                  id="documento"
+                  class="w-100"
+                />
+              </div>
+
+              <div class="col-lg-6 justify-content-center align-middle">
+                <label for="fecha" class="w-100">Fecha de Nacimiento</label>
+                <input type="text" name="fecha" id="fecha" class="w-100" />
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-lg-6 justify-content-center align-middle">
+                <label for="sexo" class="w-100">Sexo</label>
+                <input type="text" name="sexo" id="sexo" class="w-100" />
+              </div>
+
+              <div class="col-lg-6 justify-content-center align-middle">
+                <label for="estudios" class="w-100">Estudios</label>
+                <input
+                  type="text"
+                  name="estudios"
+                  id="estudios"
+                  class="w-100"
+                />
+              </div>
+            </div>
+
+            <label for="direccion" class="w-100">Direccion</label>
+            <input type="text" name="direccion" id="direccion" class="w-100" />
+          </form>
+        </div>
+        <div
+          class="col-sm-6 col-lg-6 d-flex justify-content-center align-middle pb-1"
+        >
+          <form>
+            <label for="nombre2" class="w-100">Segundo Nombre</label>
+            <input type="text" name="nombre2" id="nombre2" class="w-100" />
+
+            <label for="apellido" class="w-100">Segundo Apellido</label>
+            <input type="text" name="apellido2" id="apellido2" class="w-100" />
+
+            <label for="correo" class="w-100">e-mail</label>
+            <input type="text" name="correo" id="correo" class="w-100" />
+
+            <div class="row">
+              <div class="col-lg-6 justify-content-center align-middle">
+                <label for="estadocivil" class="w-100">Estado Civil</label>
+                <input
+                  type="text"
+                  name="estadocivil"
+                  id="estadocivil"
+                  class="w-100"
+                />
+              </div>
+
+              <div class="col-lg-6 justify-content-center align-middle">
+                <label for="celular" class="w-100">Celular</label>
+                <input type="text" name="celular" id="celular" class="w-100" />
+              </div>
+            </div>
+
+            <label for="departamento" class="w-100">Departamento</label>
+            <input
+              type="text"
+              name="departamento"
+              id="departamento"
+              class="w-100"
+            />
+          </form>
+        </div>
+      </div>
+      <div
+        class="h6 d-flex justify-content-center align-middle pb-1 border border-dark text-black bg-primary"
+      >
+        Deudas
+      </div>
+
+      <form class="d-grid gap-4">
+        <div class="row d-flex">
+          <label for="prestamo" class="col-7 col-sm-8 col-lg-8 p-3"
+            >Datos del Prestamo 1</label
+          >
+          <div class="row justify-content-between col-4 d-flex">
+            <button class="border-0 bg-white col-5 col-lg-3 p-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="green"
+                class="bi bi-plus-circle"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                />
+                <path
+                  d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+                />
+              </svg>
+              <br />añadir
+            </button>
+
+            <button class="col-4 border-0 bg-white p-0">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                fill="red"
+                class="bi bi-x-circle"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                />
+                <path
+                  d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+                />
+              </svg>
+              <br />remover
+            </button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 justify-content-center align-middle">
+            <label for="institucion" class="w-100">Institución</label>
+            <input
+              type="text"
+              name="institucion"
+              id="institucion"
+              class="w-100"
+            />
+          </div>
+
+          <div class="col-lg-3 justify-content-center align-middle">
+            <label for="deudatotal" class="w-100">Deuda Total</label>
+            <input
+              type="text"
+              name="deudatotal"
+              id="deudatotal"
+              class="w-100"
+            />
+          </div>
+
+          <div class="col-lg-2 justify-content-center align-middle">
+            <label for="capital" class="w-100">Capital</label>
+            <input type="text" name="capital" id="capital" class="w-100" />
+          </div>
+        </div>
+      </form>
+      <div
+        class="h6 d-flex justify-content-center align-middle pb-1 border border-dark text-black bg-primary"
+      >
+        Plan CTD
+      </div>
+
+      <div class="row mb-4">
+        <div class="col-lg-3 justify-content-center align-middle">
+          <label for="ingresodeclarado" class="w-100">Ingreso Declarado</label>
+          <input
+            type="text"
+            name="ingresodeclarado"
+            id="ingresodeclarado"
+            class="w-100"
+          />
+        </div>
+
+        <div class="col-lg-3 justify-content-center align-middle">
+          <label for="cuotapactada" class="w-100">Couta pactada</label>
+          <input
+            type="text"
+            name="cuotapactada"
+            id="cuotapactada"
+            class="w-100"
+          />
+        </div>
+
+        <div class="col-lg-2 justify-content-center align-middle">
+          <label for="plazoestimado" class="w-100">Plazo estimado</label>
+          <input
+            type="text"
+            name="plazoestimado"
+            id="plazoestimado"
+            class="w-100"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
